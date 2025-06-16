@@ -74,7 +74,7 @@ function FuelMap({ stations }) {
 
   return (
     <>
-      <div style={{ margin: '1rem 0', display: 'flex', alignItems: 'center', gap: '2rem' }}>
+      <div className='fuel-map-filter'>
         <div>
           <label htmlFor="filtro-rotulo">Filtrar por rótulo:</label>
           <input
@@ -100,7 +100,7 @@ function FuelMap({ stations }) {
           />
         </div>
       </div>
-      <MapContainer center={userLocation} zoom={14} style={{ height: '80vh', width: '100%' }}>
+      <MapContainer center={userLocation} zoom={14}>
         <TileLayer
           // url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           url="http://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"

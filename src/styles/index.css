@@ -1,9 +1,16 @@
 body {
-  justify-content: center;
-  height: 100vh;
   background-color: var(--light-gray);
   font-family: "Victor Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 1.2em;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }

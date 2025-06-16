@@ -1,9 +1,6 @@
 @import 'variables.css';
 
 .about-container {
-  background: var(--light-gray);
-  color: var(--dark-gray);
-  padding: 2rem;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(33,33,33,0.08);
+  width: 100%;
+  max-width: var(--max-content-with);
 }

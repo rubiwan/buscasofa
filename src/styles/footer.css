@@ -1,24 +1,44 @@
 .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--dark-blue);
     color: var(--yellow);
     padding: 1rem 0;
-    padding-left: 2rem;
-    margin-bottom: 1rem;
     margin-top: 2rem;
     height: 10rem;
-    text-align: center;
 }
 
 .specialTeam {
     color: var(--yellow);
     font-size: x-large;
     font-weight: normal;
+    margin: 0;
 }
 
-li {
-    list-style: none;
-    margin-right: 1rem;
-    color: var(--light-blue);
+.footer ul {
+    max-height: max-content;
+}
+
+.footer li {
+    list-style: circle inside;
     margin-top: 1rem;
+    max-width: max-content;
     font-weight: bold;
+}
+
+.footer li:hover {
+    transition-duration: 0.3s;
+    transform: translateX(10px);
+}
+
+.footer a {
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    transition-duration: 0.6s;
+    color: var(--yellow);
 }

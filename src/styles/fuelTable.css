@@ -1,5 +1,11 @@
 @import 'variables.css';
 
+.fuel-table-container {
+  width: 100%;
+  max-width: var(--max-content-with);
+  min-width: max-content;
+}
+
 .fuel-table {
   width: 100%;
   border-collapse: collapse;

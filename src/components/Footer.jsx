@@ -4,11 +4,19 @@ import '@styles/footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-        <h2 className='specialTeam'>Miembros del equipo:</h2>
-        <ul>
-            <li>Emilio Brahim Quechen Romero</li>
-            <li>Ana Isabel Díaz Roig</li>
-        </ul>
+      <ul>
+        <h2 className='specialTeam'>Miembros del equipo</h2>
+        <li>
+          <a href="https://github.com/eQuechen" target='_blank'>
+            Emilio Brahim Quechen Romero
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/rubiwan" target='_blank'>
+            Ana Isabel Díaz Roig
+          </a>
+        </li>
+      </ul>
     </div>
   )
 }

@@ -1,19 +1,38 @@
 @import 'variables.css';
 
 .home-container {
+  width: 100%;
+  max-width: var(--max-content-with);
+  min-width: max-content;
   background: var(--light-gray);
   color: var(--dark-gray);
-  padding: 2rem;
   border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(33,33,33,0.08);
-}
-.home-container table {
-  width: 100%;
-  border-collapse: collapse;
 }
 
-.home-container td, .home-container th {
-  padding: 1rem;
-  text-align: left;
+.home-container table {
+  justify-self: end;
+  width: 660px;
+  border-collapse: collapse;
+  background: var(--white);
+  color: var(--dark-gray);
+  margin-bottom: 5rem;
+}
+
+.home-container th {
+  background: var(--primary-blue);
+  color: var(--white);
+  padding: 0.75rem;
+}
+
+td, th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 150px;
+    text-align: left;
+}
+
+.home-container td {
+  padding: 0.5rem;
   border-bottom: 1px solid var(--light-gray);
 }

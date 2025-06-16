@@ -6,7 +6,8 @@
   padding: 2rem;
   border-radius: 5px;
   border: 1px solid var(--dark-blue);
-  max-width: 500px;
+  min-width: 500px;
+  width: 660px;
   margin: 2rem auto;
 }
 

@@ -1,8 +1,21 @@
 @import 'variables.css';
 
+.leaflet-container,
+.fuel-map-filter {
+  display: flex;
+  width: 100%;
+  max-width: var(--max-content-with);
+}
+
 .leaflet-container {
-  height: 80vh;
+  height: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
+.fuel-map-filter {
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem 0;
+}
