@@ -10,7 +10,7 @@ import ProfileView from '../views/ProfileView.jsx';
 import StationDetailView from '@/views/StationDetailView.jsx';
 import PrivateRoute from '../router/PrivateRouter';
 import { NotFoundView } from '../views/NotFoundView.jsx';
-import { useUser } from '../contexts/UserContext';
+import { useUser } from '../contexts/userContext.js';
 
 export default function FuelRoutes({ stations }) {
     const { user, setUser } = useUser();

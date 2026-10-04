@@ -4,7 +4,7 @@ import logo from '../assets/logo.png';
 
 
 import '@styles/header.css'
-import { useUser } from '../contexts/UserContext';
+import { useUser } from '../contexts/userContext.js';
 
 function Header() {
     const { user, setUser } = useUser();
