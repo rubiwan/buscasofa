@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Generated Cypress files
+cypress/screenshots/
+cypress/videos/
+
+# Local audit report
+audit-report.json

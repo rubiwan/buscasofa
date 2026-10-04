@@ -1,7 +1,7 @@
 import {useNavigate} from 'react-router-dom';
 import {useEffect, useState} from 'react';
 
-import {useUser} from '../contexts/UserContext';
+import { useUser } from '../contexts/userContext.js';
 import '@styles/profile.css';
 
 

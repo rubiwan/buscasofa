@@ -6,14 +6,12 @@ import {useEffect, useState} from 'react';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import {useUser} from './contexts/UserContext';
 
 import {loadStations} from "@hooks/useFuelData.js";
 
 
 function App() {
 
-    const {user, setUser} = useUser();
     const [stations, setStations] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);

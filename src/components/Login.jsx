@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import '@styles/form.css'
-import { useUser } from '../contexts/UserContext';
+import { useUser } from '../contexts/userContext.js';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {

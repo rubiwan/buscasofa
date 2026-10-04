@@ -1,10 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import '@styles/comments.css';
-import { useUser } from '../contexts/UserContext';
+
 
 function Comments({ stationId, user }) {
 
-  const { user : UserContext } = useUser();
 
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState('');
@@ -124,15 +123,15 @@ const renderComments = (commentsList) => (
 );
   // --- FIN: Respuestas anidadas ---
 
-  const fetchComments = async () => {
+  const fetchComments = useCallback(async () => {
     const res = await fetch(`http://localhost:4000/api/comments/${stationId}`);
     const data = await res.json();
     setComments(data);
-  };
+  }, [stationId]);
 
   useEffect(() => {
     fetchComments();
-  }, [stationId]);
+  }, [fetchComments]);
 
   const handleSubmit = async e => {
     e.preventDefault();
