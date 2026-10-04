@@ -10,7 +10,7 @@ describe('Visualización del header de la aplicación', () => {
         cy.get('nav a.about')
             .should('exist')
             .should('have.attr', 'href', '/about')
-            .contains('Acerca de')
+            .contains('Quienes somos')
             .click();
         cy.url().should('include', '/about');   // hemos navegado a la página correctamente
     });
